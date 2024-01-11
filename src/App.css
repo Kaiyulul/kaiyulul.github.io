@@ -15,8 +15,8 @@
 } 
 
 html {
-  margin: 2rem 0;
-  overflow: hidden;
+  /* margin: 2rem 0; */
+  /* overflow: hidden; */
 }
 
 body {
@@ -41,6 +41,14 @@ p {
   font-size: 10vw;
   margin: 1rem 1rem 0.5rem;
 }
+
+@media (max-width: 425px) {
+  .main > h1 {
+    font-size: 25vw;
+    white-space: nowrap;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   h1, h2, h3 {
