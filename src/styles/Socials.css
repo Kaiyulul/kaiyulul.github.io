@@ -1,0 +1,8 @@
+#socials {
+    display: grid;
+    grid-template-columns: repeat(4, 10vw);
+    color: rgb(234, 234, 234);
+    justify-content: center;
+    margin: 1rem auto;
+    /* border: red solid 5px; */
+}

@@ -1,0 +1,41 @@
+a {
+    color: rgb(200, 200, 200, 0.4);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(236, 236, 236, 0.9);
+}
+
+.card {
+    width: 100%;
+    min-width: 100%;
+    border: 1px solid;
+    border-radius: 25px;
+    text-align: justify;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    padding: 2%;
+    font-size: 2vh;
+}
+
+a {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    a {
+        color: rgb(236, 236, 236);
+        text-decoration: none;
+    }
+    .card p {
+        font-size: 4vmin;
+    }
+}

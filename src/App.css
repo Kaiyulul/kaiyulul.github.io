@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Humane";
+  src: url("../public/fonts/Humane-Regular.otf");
+  color: rgb(236, 236, 236);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "FoundersGrotesk";
+  src: url("../public/fonts/FoundersGrotesk-Regular.otf");
+  color: rgb(236, 236, 236);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#root {
+  margin: 5rem;
+} 
+
+html {
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: FoundersGrotesk;
+  background-color:rgb(33, 33, 33);
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: Humane;
+  font-weight: normal;
+  font-size: 20vh;
+  margin: 0 1rem;
+}
+
+p {
+  font-family: FoundersGrotesk;
+  font-size: 10vw;
+  margin: 1rem 1rem 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 30vmin;
+  }
+  
+  p {
+      font-size: 5vmin;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1300px) {
+  .main > h1 {
+    font-size: 30vmin;
   }
-  to {
-    transform: rotate(360deg);
+
+  #landing > .main {
+    margin: 20% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, 60%);
+  }
+
+  .main > .card-links {
+    /* background: red !important; */
+    grid-column-start: 2;
+    /* grid-row: span 3; */
+    margin: 0 auto;
   }
 }
+
+/* 
+.marble {
+  position: fixed;
+  z-index: 99;
+} */
+
