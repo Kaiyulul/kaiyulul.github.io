@@ -15,6 +15,8 @@
 } 
 
 html {
+  min-height: 90vh;
+  min-height: 90svh;
   /* margin: 2rem 0; */
   /* overflow: hidden; */
 }
@@ -27,6 +29,14 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  min-height: 80svh
 }
 
 h1, h2, h3 {
@@ -66,17 +76,29 @@ p {
   }
 
   #landing > .main {
-    margin: 20% 0;
+    /* margin: 20% 0; */
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(1, 60%);
+    grid-template-columns: repeat(2, auto);
+    /* grid-template-rows: repeat(3, auto); */
   }
 
   .main > .card-links {
     /* background: red !important; */
     grid-column-start: 2;
-    /* grid-row: span 3; */
-    margin: 0 auto;
+    grid-row: span 2;
+    /* margin: 0 auto; */
+  }
+
+  .main > h1 {
+    /* background: red !important; */
+    /* justify-content: center; */
+    /* grid-column-start: 1; */
+    /* grid-row-start: 2; */
+  }
+
+  .main > .bubble-links {
+    /* background: blue !important; */
+    /* display: block; */
   }
 }
 

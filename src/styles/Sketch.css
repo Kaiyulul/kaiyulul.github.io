@@ -1,5 +1,8 @@
 #sketch {
     position: absolute;
+    min-width: 100%;
+    min-height: 90vh;
+    min-height: 90svh;
     overflow: hidden !important;
     z-index: -1;
     top: 0;

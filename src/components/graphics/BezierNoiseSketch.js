@@ -15,13 +15,18 @@ let colorMatrix = [
 let temp;
 
 const Sketch = p5 => {
-    let w = p5.windowWidth;
-    let h = p5.windowHeight;
+    const p5Container = document.querySelector('#sketch');
+    console.log(p5Container);
+    console.log(p5Container.clientWidth);
+    console.log(p5Container.clientHeight);
+    let w = p5Container.clientWidth;
+    let h = p5Container.clientHeight;
 
     let t, canvasSize;
 
     p5.setup = () => {
-        p5.createCanvas(w, h, p5.WEBGL);
+        let cnv = p5.createCanvas(w, h, p5.WEBGL);
+        cnv.parent(p5Container);
         p5.angleMode(p5.DEGREES);
         p5.noFill();
 
@@ -71,7 +76,7 @@ const Sketch = p5 => {
     }
 
     p5.windowResized = () => {
-        p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+        p5.resizeCanvas(p5Container.clientWidth, p5Container.clientHeight);
     }
 };
 
