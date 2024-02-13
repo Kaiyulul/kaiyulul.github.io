@@ -3,33 +3,42 @@ import "../../styles/Landing.css";
 
 import BezierNoiseSketch from "../graphics/BezierNoiseSketch";
 import Socials from "../Socials.js"
-import Card from "../Card.js";
+import { CardLocal, CardExternal } from "../Card.js";
 
 class Landing extends React.Component {
     render() {
         return (
             <section id="landing">
                 <div className="main">
-                    <h1> {'KYLE TANDOC'} </h1>
+                    <div className="web">
+                        <h1> {'KYLE TANDOC'} </h1>
+                        <div className="web bubble-links">
+                            <Socials/>
+                        </div>
+                    </div>
                     <div className="card-links">
-                        <Card 
+                        <CardExternal
                             url="https://kyle-in-limbo.vercel.app/"
                             title='Personal blog' 
                             description=""/>
-                        <Card 
+                        <CardExternal 
                             url="https://www.instagram.com/_kaiyulul_"
                             title="Art with Kaiyulul" 
                             description=""/>
-                        <Card 
-                            url="/sketch"
+                        <CardLocal 
+                            url="/portfolio"
                             title="My Portfolio" 
                             description=""/>
-                        <Card 
+                        <CardLocal 
+                            url="/profile"
+                            title="My Profile" 
+                            description=""/>
+                        <CardLocal 
                             url="/sketch"
                             title="View Sketch" 
                             description=""/>
                     </div>
-                    <div className="bubble-links">
+                    <div className="mobile bubble-links">
                         <Socials/>
                     </div>
                     <BezierNoiseSketch/>    

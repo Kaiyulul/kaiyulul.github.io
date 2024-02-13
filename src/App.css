@@ -70,9 +70,31 @@ p {
   }
 }
 
+@media (max-width: 1299px) {
+  .web.bubble-links {
+    display: none;
+  }
+
+  .mobile.bubble-links {
+    display: block;
+  }
+}
+
 @media (min-width: 1300px) {
-  .main > h1 {
-    font-size: 30vmin;
+  .mobile.bubble-links{
+    display: none;
+  }
+
+  .web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-row: span 2;
+  }
+
+  .main > .web > h1 {
+    font-size: 40vmin;
   }
 
   #landing > .main {
@@ -96,7 +118,7 @@ p {
     /* grid-row-start: 2; */
   }
 
-  .main > .bubble-links {
+  .main > .web.bubble-links {
     /* background: blue !important; */
     /* display: block; */
   }
