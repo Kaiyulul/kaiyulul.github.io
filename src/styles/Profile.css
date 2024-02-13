@@ -1,0 +1,28 @@
+.profile-container {
+    color: rgb(236, 236, 236);
+    padding: 5rem;
+}
+
+.profile-container > h1 {
+    font-size: 30vmin;
+}
+
+.profile-container > p {
+    font-size: 10vmin;
+    padding: 0 0 1rem;
+}
+
+.tech {
+    font-size: 5rem ;
+    padding-inline: 0;
+    list-style: none;
+    gap: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech li {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(236, 236, 236, 0.05)
+}

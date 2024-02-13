@@ -59,7 +59,6 @@ p {
   }
 }
 
-
 @media only screen and (max-width: 768px) {
   h1, h2, h3 {
     font-size: 30vmin;
@@ -94,7 +93,7 @@ p {
   }
 
   .main > .web > h1 {
-    font-size: 40vmin;
+    font-size: 35vmin;
   }
 
   #landing > .main {

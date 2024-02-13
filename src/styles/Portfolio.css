@@ -1,0 +1,13 @@
+.portfolio-container {
+    color: rgb(236, 236, 236);
+    padding: 5rem;
+}
+
+.portfolio-container > h1 {
+    font-size: 30vmin;
+}
+
+.portfolio-container > p {
+    font-size: 10vmin;
+    padding: 0 0 1rem;
+}

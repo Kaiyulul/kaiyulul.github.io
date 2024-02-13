@@ -1,5 +1,7 @@
+import React from "react";
 import { ReactP5Wrapper } from 'react-p5-wrapper';
 import "../../styles/Sketch.css";
+import Navbar from "../Navbar.js";
 
 let colorMatrix = [
     [183, 156, 237],
@@ -13,12 +15,13 @@ let colorMatrix = [
 ]
 
 let temp;
+let seed = Math.random();
 
 const Sketch = p5 => {
     const p5Container = document.querySelector('#sketch');
-    console.log(p5Container);
-    console.log(p5Container.clientWidth);
-    console.log(p5Container.clientHeight);
+    // console.log(p5Container);
+    // console.log(p5Container.clientWidth);
+    // console.log(p5Container.clientHeight);
     let w = p5Container.clientWidth;
     let h = p5Container.clientHeight;
 
@@ -32,9 +35,10 @@ const Sketch = p5 => {
 
         // Bezier Noise
         // p5.stroke(255, 10);  
-        t = 0;
+        t = Math.random();
         canvasSize = w * h;
         temp = p5.random(colorMatrix);
+        // p5.noiseSeed(parseInt(p5.getURL()));
     };
 
     p5.draw = () => {
@@ -65,7 +69,7 @@ const Sketch = p5 => {
             p5.bezier(x1, y1, x2, y2, x3, y3, x4, y4);
         } 
         else {
-            // p5.curve(x1, y1, x2, y2, x3, y3, x4, y4);
+            p5.curve(x1, y1, x2, y2, x3, y3, x4, y4);
         }
         t += 0.002;
         
@@ -80,10 +84,16 @@ const Sketch = p5 => {
     }
 };
 
-const BezierNoiseSketch = () => (
-    <div id="sketch">
-        <ReactP5Wrapper sketch={Sketch} />
-    </div>
-);
+class BezierNoiseSketch extends React.Component {
+    render() {
+        return (
+            <section>
+                <div id="sketch">
+                    <ReactP5Wrapper sketch={Sketch} />
+                </div>
+            </section>
+        )
+    }
+}
 
 export default BezierNoiseSketch;
