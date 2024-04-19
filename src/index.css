@@ -1,0 +1,50 @@
+/* Fonts - Cabin, Lora, Poppins, Spectral */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --text: #121212;
+  --background: #ededed;
+
+  color: var(--text);
+  background-color: var(--background);
+}
+
+html, :root, body {
+  margin: 0;
+  padding: 0;
+}
+
+.is-light {
+  --dark-text: #121212;
+  --light-text: #ededed;
+  
+
+  --dark-background: #816045;
+  --light-background: #ededed;
+}
+
+.is-dark {
+
+}
+
+
+body {
+  font-family: "Spectral", serif;
+}
+
+.Poppins {
+  font-family: "Poppins", serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
