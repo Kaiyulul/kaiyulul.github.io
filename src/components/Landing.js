@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Test.css";
+import "../styles/Landing.css";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SendIcon from '@mui/icons-material/Send';
@@ -27,7 +27,7 @@ class Landing extends React.Component {
                         <GitHubIcon fontSize='large'/>
                     </a>
                 </div>
-                <div className='mast-right'>
+                {/* <div className='mast-right'>
                     <div className='mast-heading-container'>
                         <h1>
                             Freelance
@@ -46,7 +46,7 @@ class Landing extends React.Component {
                             Designer
                         </h1>
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }

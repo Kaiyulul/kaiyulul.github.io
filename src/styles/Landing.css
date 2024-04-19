@@ -6,16 +6,17 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-column-gap: 3rem;
+    grid-column-gap: 3vw;
 }
 
 .mast-left {
+    position: fixed;
     display: flex;
     max-width: 48vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-column-gap: 1rem;
+    grid-column-gap: 1vw;
 }
 
 .upper-button-container {
@@ -25,14 +26,14 @@
 
 .mast-video {
     width: 15vw;
-    border-radius: 2rem;
-    margin: 0 7rem 0 5rem;
-    transform: translate(2rem, -1rem) rotateZ(3deg);
+    border-radius: 2vw;
+    margin: 0 7vw 0 5vw;
+    transform: translate(2vw, -1vw) rotateZ(3deg);
     transition: all 0.2s ease-in-out;
 }
 
 .mast-video:hover {
-    transform: translate(2rem, -1rem) scale(1.1);
+    transform: translate(2vw, -1vw) scale(1.1);
 }
 
 .mast-greet {
@@ -44,8 +45,8 @@
     display: flex;
     padding: 10px 20px;
     align-items: center;
-    border-radius: 2rem;
-    transform: translate(-8rem, 4rem) rotateZ(-14deg) scale(1.5);
+    border-radius: 2vw;
+    transform: translate(-8vw, 4vw) rotateZ(-14deg) scale(1.5);
     transition: all .2s ease-in-out;
 }
 
@@ -54,7 +55,7 @@
 }
 
 .mast-greet:hover {
-    transform: translate(-8rem, 4rem) rotateZ(-10deg) scale(1.6);
+    transform: translate(-8vw, 4vw) rotateZ(-10deg) scale(1.6);
 }
 
 .mast-socmed {
@@ -69,15 +70,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 1vw;
     line-height: 100%;
     background-color: #82bae8;
-    transform: translate(10rem, -2rem) rotateZ(4deg) scale(1.5);
+    transform: translate(8vw, -2vw) rotateZ(4deg) scale(1.5);
     transition: all .2s ease-in-out;
 }
 
 .linkedin:hover {
-    transform: translate(10rem, -2rem) rotateZ(-1deg) scale(1.6);
+    transform: translate(8vw, -2vw) rotateZ(-1deg) scale(1.6);
 }
 
 .github {
@@ -89,15 +90,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 1vw;
     line-height: 100%;
     background-color: #afa8aa;
-    transform: translate(-10rem, -7rem) rotateZ(-5deg);
+    transform: translate(-8vw, -7vw) rotateZ(-5deg);
     transition: all .2s ease-in-out;
 }
 
 .github:hover {
-    transform: translate(-10rem, -7rem) rotateZ(-1deg) scale(1.1);
+    transform: translate(-8vw, -7vw) rotateZ(-1deg) scale(1.1);
 }
 
 .email {
@@ -110,15 +111,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 1vw;
     line-height: 100%;
     background-color: #e6c14e;
-    transform: translate(8rem, 4rem) rotateZ(8deg);
+    transform: translate(6vw, 4vw) rotateZ(8deg);
     transition: all .2s ease-in-out;
 }
 
 .email:hover {
-    transform: translate(8rem, 4rem) rotateZ(0deg) scale(1.1);
+    transform: translate(6vw, 4vw) rotateZ(0deg) scale(1.1);
 }
 
 .mast-right {
@@ -142,6 +143,18 @@
     font-style: italic;
 }
 
+@media screen and (max-width: 1100px) {
+    .mast-video {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mast-video {
+        width: 50vw;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .mast-container {
         flex-direction: column;
@@ -161,15 +174,15 @@
 
     .mast-video {
         width: 70vw;
-        border-radius: 3rem;
+        border-radius: 3vw;
     }
 
     .mast-greet {
         width: 21vw;
         height: 14vw;
         align-items: center;
-        border-radius: 2rem;
-        transform: translate(8rem, 2rem) rotateZ(-10deg);
+        border-radius: 2vw;
+        transform: translate(-6vw, 2vw) rotateZ(-10deg);
     }
 
     .mast-greet > h1{
