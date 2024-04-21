@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
-  --text: #121212;
-  --background: #ededed;
+  --primary-text: #e0d8d4;
+  --secondary-text: #afa9a6;
+  --tertiary-text: #868280;
+  --background: #1b1410;
+}
 
-  color: var(--text);
+html {
   background-color: var(--background);
+  color: var(--primary-text);
 }
 
 html, :root, body {
@@ -14,34 +18,17 @@ html, :root, body {
   padding: 0;
 }
 
-.is-light {
-  --dark-text: #121212;
-  --light-text: #ededed;
-  
-
-  --dark-background: #816045;
-  --light-background: #ededed;
-}
-
-.is-dark {
-
-}
-
-
 body {
-  font-family: "Spectral", serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.Poppins {
-  font-family: "Poppins", serif;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.italic {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: bold;
+h1, h2 {
+  margin: 0;
 }
 
 code {

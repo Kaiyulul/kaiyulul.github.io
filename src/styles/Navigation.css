@@ -1,0 +1,19 @@
+.nav {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-item {
+    line-height: 0;
+}
+
+.status {
+    border: 1px solid var(--primary-text);
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+    display: inline-block;
+}
