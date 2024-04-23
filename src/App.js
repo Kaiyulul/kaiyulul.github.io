@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Homepage from './pages/Homepage.js';
 
-import { toggleMode } from './components/util/ToggleMode';
+import { toggleMode } from './util/ToggleMode.js';
 import { useEffect } from 'react';
 
 function App() {

@@ -1,37 +1,22 @@
 import React from 'react';
-import "../styles/Navigation.css";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SendIcon from '@mui/icons-material/Send';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-class Navigation extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { date: new Date()};
-    }
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
-    componentDidMount() {
-        this.timerID = setInterval(() => this.tick(), 1000);
-    }
+import "../styles/Contact.css";
 
-    componentWillUnmount() {
-        clearInterval(this.timerID);
-    }
 
-    tick() {
-        this.setState({
-            date: new Date()
-        });
-    }
-
+class Contact extends React.Component {
     render() {
         return (
-            <div className='nav'>
-                {/* <div className='bold status'>
-                    OPEN TO WORK
-                </div> */}
+            <div className='contacts-container container'>
+                <div className='bold project-title'>
+                    Contacts
+                </div>
                 <div className='contact-items'>
                     <a href='mailto:kyletandoc@gmail.com' target='_blank' className='socmed email'>
                         <SendIcon fontSize='small'/>
@@ -46,10 +31,9 @@ class Navigation extends React.Component {
                         <InstagramIcon fontSize='small'/>
                     </a>
                 </div>
-                <div className='italic nav-clock'>{this.state.date.toLocaleTimeString()}</div>
             </div>
         )
     }
 }
 
-export default Navigation;
+export default Contact;

@@ -1,6 +1,8 @@
 import React from 'react';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const Experience = () => {
+
     const xpItems = {
         "La Nada": {
             href: "https://lanadabrand.com/",
@@ -26,7 +28,7 @@ const Experience = () => {
     }
 
     return (
-        <div className='xp-container'>
+        <div className='xp-container container'>
             <div className='bold xp-title'>
                 Work Experience
             </div>
@@ -35,8 +37,14 @@ const Experience = () => {
                     const item = xpItems[key];
                     return(
                         <div className={`experience ${key}`}>
+                            <div className='xp-duration'>
+                                {item.duration}
+                            </div>
                             <div className='xp-details'>
-                                <a href={item.href} className='bold xp-company'> {key} </a>
+                                {item.href ? 
+                                <a href={item.href} className='bold xp-company link'> {key} <ExitToAppIcon fontSize='small'/></a> : 
+                                <a className='bold xp-company no-link'> {key} </a>
+                                }
                                 <div className='title'> {item.title} </div>
                                 {item.desc?.map(function (descItem, i) {
                                     return(
@@ -44,9 +52,6 @@ const Experience = () => {
                                     );
                                 })}
                                 <div className='stack'> {item.stack} </div>
-                            </div>
-                            <div className='xp-duration'>
-                                {item.duration}
                             </div>
                         </div>
                     );

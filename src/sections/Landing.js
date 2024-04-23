@@ -1,12 +1,10 @@
 import React from 'react';
-// import "../styles/Landing.css";
-import "../styles/Dev.css";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import SendIcon from '@mui/icons-material/Send';
-
+import "../styles/Landing.css";
+// import "../styles/Dev.css";
 import About from './About.js';
 import Experience from './Experience.js';
+import Projects from './Projects.js';
+import Contact from './Contact.js';
 
 class Landing extends React.Component {
     render() {
@@ -27,47 +25,10 @@ class Landing extends React.Component {
                     <div className='content'>
                         <About />
                         <Experience />
+                        {/* <Projects /> */}
+                        {/* <Contact /> */}
                     </div>
                 </div>
-                {/* <div className='mast-left'>
-                    <div className="upper-button-container">
-                        <a href='/' className='mast-button greeting'>
-                            <h1>
-                                Hey, I'm <span className='italic'> Kyle! </span>
-                            </h1>
-                        </a>
-                        <a href='mailto:kyletandoc@gmail.com' target='_blank' className='mast-button socmed email'>
-                            <SendIcon fontSize='large'/>
-                        </a>
-                    </div>
-                    <video autoPlay muted loop className='mast-video' src='/assets/mast-video.MOV'/>
-                    <a href='https://www.linkedin.com/in/kyle-tandoc/' target='_blank' className='mast-button socmed linkedin'>
-                        <LinkedInIcon fontSize='large'/>
-                    </a>
-                    <a href='https://www.linkedin.com/in/kyle-tandoc/' target='_blank' className='mast-button socmed github'>
-                        <GitHubIcon fontSize='large'/>
-                    </a>
-                </div> */}
-                {/* <div className='mast-right'>
-                    <div className='mast-heading-container'>
-                        <h1>
-                            Freelance
-                        </h1>
-                    </div>
-                    <div className='mast-heading-container'>
-                        <h1>
-                            Developer
-                        </h1>
-                        <h1>
-                            &
-                        </h1>
-                    </div>
-                    <div className='mast-heading-container'>
-                        <h1>
-                            Designer
-                        </h1>
-                    </div>
-                </div> */}
             </div>
         )
     }

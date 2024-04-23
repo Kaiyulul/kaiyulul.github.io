@@ -9,7 +9,6 @@
 
 .mast-left {
     max-width: 25rem;
-    padding-top: 10vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,11 +33,11 @@
     display: flex;
 }
 
-.about-container, .xp-container {
+.container {
     padding-top: 5vh;
 }
 
-.about-title, .xp-title {
+.about-title, .xp-title, .project-title {
     text-transform: uppercase;
 }
 
@@ -70,6 +69,7 @@
     color: var(--tertiary-text);
 }
 
-
-
+.link:hover {
+    text-decoration: underline;
+}
 
