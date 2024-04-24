@@ -3,7 +3,7 @@ import "../styles/Landing.css";
 // import "../styles/Dev.css";
 import About from './About.js';
 import Experience from './Experience.js';
-import Projects from './Projects.js';
+import Works from './Works.js';
 import Contact from './Contact.js';
 
 class Landing extends React.Component {
@@ -25,7 +25,7 @@ class Landing extends React.Component {
                     <div className='content'>
                         <About />
                         <Experience />
-                        {/* <Projects /> */}
+                        <Works />
                         {/* <Contact /> */}
                     </div>
                 </div>

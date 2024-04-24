@@ -37,12 +37,25 @@
     padding-top: 5vh;
 }
 
-.about-title, .xp-title, .project-title {
+.about-title, .xp-title, .works-title {
     text-transform: uppercase;
 }
 
-.xp-items {
-    /* padding-top: 1rem; */
+.skills-dev {
+    padding-top: 2rem;
+}
+
+.skills, .dev {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    grid-gap: 1rem;
+}
+
+.skills > *, .dev > * {
+    background-color: var(--tertiary-text);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 .xp-company {

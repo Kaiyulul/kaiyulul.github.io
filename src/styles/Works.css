@@ -1,0 +1,41 @@
+.works-items {
+    padding-top: 2rem;
+}
+
+.linkCard-container {
+    position: relative;
+    max-width: 25rem;
+    max-height: 5vh;
+}
+
+.hideOverflow {
+    overflow: hidden;
+}
+
+.linkCard {
+    width: 100%;
+    max-width: 25rem;
+    background: rgba(66, 54, 47, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(66, 54, 47, 0.29);
+    border-radius: 2rem;
+}
+
+.linkCard-content {
+    padding: 3rem;
+}
+
+.linkCard-content > .desc {
+    font-size: 0.8rem;
+}
+
+.linkCard-img {
+    width: 100%;
+    max-width: 25rem;
+    position: absolute;
+    border-radius: 2rem;
+    object-fit: fill;
+}
