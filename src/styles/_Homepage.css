@@ -1,0 +1,17 @@
+#homepage {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    #homepage {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #homepage {
+        padding: 0rem;
+    }
+}
