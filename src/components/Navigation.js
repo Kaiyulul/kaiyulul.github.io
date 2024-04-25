@@ -39,10 +39,10 @@ class Navigation extends React.Component {
                     <a href='https://www.linkedin.com/in/kyle-tandoc/' target='_blank' className='socmed linkedin'>
                         <LinkedInIcon fontSize='small'/>
                     </a>
-                    <a href='https://github.com/Kaiyulul' target='_blank' className='socmed github'>
+                    <a href='https://www.github.com/Kaiyulul' target='_blank' className='socmed github'>
                         <GitHubIcon fontSize='small'/>
                     </a>
-                    <a href='https://instagram/_kaiyulul_' target='_blank' className='socmed instagram'>
+                    <a href='https://www.instagram/_kaiyul_' target='_blank' className='socmed instagram'>
                         <InstagramIcon fontSize='small'/>
                     </a>
                 </div>

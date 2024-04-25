@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 
+// import Navigation from "./components/Navigation.js";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
+      {/* <Navigation/> */}
       <App />
     </HashRouter>
   </React.StrictMode>

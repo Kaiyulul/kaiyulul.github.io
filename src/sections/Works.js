@@ -13,9 +13,21 @@ class Works extends React.Component {
                 <div className='works-items'>
                     <LinkCard
                         title="La Nada"
-                        desc="Shopify Design and Development"
+                        desc="Design and Development"
                         href="/"
                         img="/assets/la-nada-preview.jpg"
+                    />
+                    <LinkCard
+                        title="In Limbo"
+                        desc="Personal Blog"
+                        href="/"
+                        img="/assets/in-limbo-preview.jpg"
+                    />
+                    <LinkCard
+                        title="Kaiyulul"
+                        desc="Generative Art"
+                        href="https://www.instagram.com/_kaiyulul_"
+                        img="/assets/kaiyulul-preview.jpg"
                     />
                 </div>
             </div>

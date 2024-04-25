@@ -6,7 +6,7 @@ const Experience = () => {
     const xpItems = {
         "La Nada": {
             href: "https://lanadabrand.com/",
-            title: "Freelance Dev & Designer",
+            title: "Freelance Developer & Designer",
             duration: "Since Mar 2024",
             desc: [
                 "Designed and wireframed responsive layouts using Figma, ensuring user-friendly interfaces and optimal user experiences.",

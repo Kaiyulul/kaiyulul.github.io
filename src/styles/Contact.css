@@ -25,5 +25,7 @@ a.socmed {
 }
 
 @media screen and (max-width: 1000px) {
-
+    .socmed {
+        color: var(--primary-text);
+    }
 }

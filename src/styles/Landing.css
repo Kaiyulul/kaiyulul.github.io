@@ -50,12 +50,20 @@
     font-size: 0.9rem;
 }
     
-.description {
+.description:not(.tagline.description):not(.currently.description) {
     color: var(--secondary-text);
+}
+
+.extra-info, .currently {
+    padding-top: 1rem;
 }
 
 .about-title, .xp-title, .works-title {
     text-transform: uppercase;
+}
+
+.about-title {
+    display: none;
 }
 
 .skills-dev {
@@ -65,14 +73,35 @@
 .skills, .dev {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     overflow: hidden;
     grid-gap: 1rem;
+    padding-top: 1rem;
 }
 
 .skills > *, .dev > * {
-    background-color: var(--tertiary-text);
-    padding: 0.25rem;
+    background: rgba(129, 67, 30, 0.384);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(66, 37, 20, 0.19);
+
+    padding: 0.25rem 1rem;
     border-radius: 0.5rem;
+}
+
+.skills > *:hover, .dev > *:hover {
+    background: rgba(184, 123, 87, 0.459);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(168, 146, 133, 0.19);
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+
+    transition: 0.5s ease-in-out;
 }
 
 .xp-company {
@@ -118,6 +147,14 @@
     .mast-container {
         max-width: 90vw;
     }
+
+    /* .description {
+        color: var(--secondary-text);
+    } */
+
+    /* .about-title {
+        display: block;
+    } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -138,6 +175,7 @@
 
 @media screen and (max-width: 768px) {
     .mast-container {
+        padding-top: 8rem;
         max-width: 90vw;
         display: flex;
         flex-direction: column;

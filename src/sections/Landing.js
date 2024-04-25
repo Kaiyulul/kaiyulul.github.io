@@ -5,6 +5,7 @@ import About from './About.js';
 import Experience from './Experience.js';
 import Works from './Works.js';
 import Contact from './Contact.js';
+import Credits from './Credits.js';
 
 class Landing extends React.Component {
     render() {
@@ -27,6 +28,7 @@ class Landing extends React.Component {
                         <Experience />
                         <Works />
                         {/* <Contact /> */}
+                        <Credits />
                     </div>
                 </div>
             </div>

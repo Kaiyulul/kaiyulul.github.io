@@ -9,12 +9,14 @@ import BezierNoise from "../graphics/BezierNoiseSketch.js";
 class Homepage extends React.Component {
     render() {
         return (
-            <section id="homepage">
+            <div className='app-container'>
                 <Navigation/>
-                <Landing/>
-                {/* <UnderConstruction /> */}
-                <BezierNoise />
-            </section>
+                <section id="homepage">
+                    <Landing/>
+                    {/* <UnderConstruction /> */}
+                    <BezierNoise />
+                </section>
+            </div>
         )
     }
 }
