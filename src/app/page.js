@@ -75,7 +75,7 @@ export default function Home() {
           />
         </section>
         <section id="introduction" className="isolate rounded-xl bg-stone-500/20 shadow-lg ring-1 ring-black/5 p-4 sm:row-span-1 sm:col-span-2 animate-fadeIn opacity-0 [--fadeIn-delay:600ms] text-sm">
-          <p className=""> <span className="font-bold"> Hey, I'm Kyle. </span> I love to create products with a <span className="italic">holistic approach to both functionality and design.</span> I am often regarded as a <span className="font-bold">Jack of all trades</span>, yet striving to master some along the way.</p>
+          <p className=""> <span className="font-bold"> Hey, I&apos;m Kyle. </span> I love to create products with a <span className="italic">holistic approach to both functionality and design.</span> I am often regarded as a <span className="font-bold">Jack of all trades</span>, yet striving to master some along the way.</p>
           <p className="mt-4"> I utilize my versatile and sometimes miscellaneous skillset to come up with solutions that look into the bigger picture while being keen with the smaller details.</p>
           <p className="mt-4 font-bold"> Let me help you any way that I can. </p>
         </section>
