@@ -23,7 +23,7 @@ const experience = {
       title: "Web Developer",
       duration: "May - Oct 2024",
       desc: [
-        "Refactored sections and snippets to decrease load times by approximately 1 second on each store.",
+        "Refactored Shopify theme sections and snippets to increase page speed by 15% on each store.",
         "Reengineered product page, blog template, and general page components for web design overhaul.",
         "Provided overall website maintenance through the admin panel and technical support to address bugs identified by users and team members.",
       ],
@@ -54,12 +54,19 @@ const experience = {
 
 export default function Home() {
   return (
-    <div className={`${dmsans.className} mx-auto min-h-screen max-w-80 sm:max-w-3xl xl:max-w-screen-xl p-4 `}>
-      <div className="grid grid-cols-1 xs:max-w-prose sm:grid-cols-3 xl:grid-cols-4 gap-2 xl:max-w-screen-xl my-8">
+    <div className={`${dmsans.className} mx-auto min-h-screen max-w-80 sm:max-w-3xl xl:max-w-screen-xl p-4 text-opacity-70 text-white`}>
+      <div className="text-xs text-center font-bold text-stone-200 text-opacity-100 animate-fadeIn opacity-0 [--fadeIn-delay:1400ms]">
+        Currently available for freelance. 
+        <span class="ml-2 relative inline-block h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-lime-300"></span>
+        </span>
+      </div>
+      <div className="grid grid-cols-1 xs:max-w-prose sm:grid-cols-3 sm:max-w-3xl xl:grid-cols-4 gap-2 xl:max-w-screen-xl my-4">
         <header className="isolate rounded-xl bg-stone-400/10  shadow-lg ring-1 ring-black/5 p-4 animate-fadeIn opacity-0 [--fadeIn-delay:200ms] flex flex-col space-between">
-          <h1 className="text-xl font-bold "> Kyle Tandoc </h1>
-          <h2 className="text-m opacity-80"> Junior Full-Stack Developer </h2>
-          <p className="text-sm mt-4 max-w-sm opacity-60 xl:max-w-72 mb-4"> Aspiring to perfect the art of developing one line at a time. </p>
+          <h1 className="text-3xl font-bold text-stone-200 text-opacity-100"> Kyle Tandoc </h1>
+          <h2 className="text-m text-stone-200 text-opacity-100">Full-stack Developer </h2>
+          <p className="text-m mt-4 max-w-sm opacity-80 xl:max-w-72 mb-4"> I deliver digital experiences that bridge functionality with thoughtful design. </p>
           <nav className="flex gap-2 mt-auto mb-0">
             <LinkedIn color="white" link="https://www.linkedin.com/in/kyle-tandoc/"/>
             <Instagram color="white" link="https://www.instagram.com/_kaiyulul_"/>
@@ -74,13 +81,24 @@ export default function Home() {
             className="w-full h-full object-cover rounded-xl bg-stone-400/10 shadow-lg ring-1 ring-black/5 transition duration-75 hover:scale-[110%] hover:rotate-[2deg]"
           />
         </section>
-        <section id="introduction" className="isolate rounded-xl bg-stone-500/20 shadow-lg ring-1 ring-black/5 p-4 sm:row-span-1 sm:col-span-2 animate-fadeIn opacity-0 [--fadeIn-delay:600ms] text-sm">
-          <p className=""> <span className="font-bold"> Hey, I&apos;m Kyle. </span> I love to create products with a <span className="italic">holistic approach to both functionality and design.</span> I am often regarded as a <span className="font-bold">Jack of all trades</span>, yet striving to master some along the way.</p>
-          <p className="mt-4"> I utilize my versatile and sometimes miscellaneous skillset to come up with solutions that look into the bigger picture while being keen with the smaller details.</p>
-          <p className="mt-4 font-bold"> Let me help you any way that I can. </p>
+        <section id="introduction" className="isolate rounded-xl bg-stone-500/20 shadow-lg ring-1 ring-black/5 p-4 sm:row-span-1 sm:col-span-2 animate-fadeIn opacity-0 [--fadeIn-delay:600ms] text-m">
+          <p className="font-bold text-stone-200 text-opacity-100">
+            A Quick Intro
+          </p>
+          <p className="mt-4">
+          Back in 2023, I graduated from Ateneo de Manila with a Computer Science degree and Specialization in Data Science and Analytics. Since then, I took a detour and been on a rollercoaster ride of building <span className="font-bold text-stone-200 text-opacity-100">responsive e-commerce sites</span>, creating <span className="font-bold text-stone-200 text-opacity-100">dynamic web applications</span>, and exploring <span className="font-bold text-stone-200 text-opacity-100">the tech of tomorrow.</span>
+          </p>
+
+          <p className="mt-4">
+          I utilize my versatile and sometimes miscellaneous skillset to address issues in my work because <span className="font-bold text-stone-200 text-opacity-100">I love to craft solutions that are both innovative and actionable.</span>
+          </p>
+
+          <p className="mt-4">
+          Beyond my techie side, I'm a horror, sci-fi, and fantasy film and series buff. I am intrigued by roguelites, strategy and FPS games. I also dance sometimes.
+          </p>
         </section>
         <section id="languages" className="isolate rounded-xl bg-stone-600/10 shadow-lg ring-1 ring-black/5 p-4 xl:col-start-1 animate-fadeIn opacity-0 [--fadeIn-delay:800ms]">
-          <h1 className="text-l font-bold mb-4"> Languages </h1>
+          <h1 className="text-l font-bold mb-4 text-stone-200 text-opacity-100"> Languages </h1>
           <div className="flex flex-wrap gap-4">
             {/* {languages.map(item => <div className='p-2 bg-white/5 backdrop-blur-md rounded-xl grow text-center text-sm' key={item}> {item} </div>)} */}
             <JavaScript color="white"/>
@@ -94,7 +112,7 @@ export default function Home() {
           </div>
         </section>
         <section id="development" className="isolate rounded-xl bg-stone-700/15 shadow-lg ring-1 ring-black/5 p-4 animate-fadeIn opacity-0 [--fadeIn-delay:1000ms]">
-          <h1 className="text-l font-bold mb-4"> Development </h1>
+          <h1 className="text-l font-bold mb-4 text-stone-200 text-opacity-100"> Development </h1>
           <div className="flex flex-wrap gap-4">
             {/* {dev.map(item => <div className='p-2 bg-white/5 backdrop-blur-md rounded-xl grow text-center text-sm' key={item}> {item} </div>)} */}
             <ReactJS color="white"/>
@@ -106,8 +124,8 @@ export default function Home() {
           </div>
         </section>
         <section className="isolate rounded-xl bg-stone-800/40 shadow-lg ring-1 ring-black/5 p-4 sm:col-span-3 xl:col-span-2 xl:row-span-3 xl:row-start-1 xl:col-start-3 animate-fadeIn opacity-0 [--fadeIn-delay:1200ms]">
-          <h1 className="text-m font-bold mb-4"> Work Experience </h1>
-          <div className='text-sm'>
+          <h1 className="text-m font-bold mb-4 text-stone-200 text-opacity-100"> Work Experience </h1>
+          <div className='text-m'>
             {Object.keys(experience).map((key, i) => {
               const item = experience[key];
               return(
@@ -117,8 +135,8 @@ export default function Home() {
                   </div>
                   <div className="col-span-3">
                     {item.href ? 
-                    <p className='font-bold flex justify-between'> {key} <Link color="white" link={item.href}/></p> : 
-                    <p className='font-bold flex justify-between'> {key} </p>
+                    <p className='font-bold flex justify-between text-stone-200 text-opacity-100'> {key} <Link color="white" link={item.href}/></p> : 
+                    <p className='font-bold flex justify-between text-stone-200 text-opacity-100'> {key} </p>
                     }
                     <div className="mb-4"> {item.title} </div>
                     {item.desc?.map(function (descItem, i) {
