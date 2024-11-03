@@ -94,7 +94,7 @@ export default function Home() {
           </p>
 
           <p className="mt-4">
-          Beyond my techie side, I'm a horror, sci-fi, and fantasy film and series buff. I am intrigued by roguelites, strategy and FPS games. I also dance sometimes.
+          Beyond my techie side, I am a horror, sci-fi, and fantasy film and series buff. I am intrigued by roguelites, strategy and FPS games. I also dance sometimes.
           </p>
         </section>
         <section id="languages" className="isolate rounded-xl bg-stone-600/10 shadow-lg ring-1 ring-black/5 p-4 xl:col-start-1 animate-fadeIn opacity-0 [--fadeIn-delay:800ms]">
